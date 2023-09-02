@@ -1,0 +1,16 @@
+import pandas as pd 
+import matplotlib.pyplot as plt 
+df=pd.read_csv("SOCR-HeightWeight.csv")
+print('Last 10 rows:\n',df.tail(10))
+print('First 10 rows:\n',df.head(10))
+print('\nrandom 20 rows:\n\n',df.sample(20))
+print('No. of rows and columns in dataframe is :',df.shape)
+print('No. of rows and columns in dataframe is :',df.size)
+print('\ndatatype of dataframe:',df.dtypes)
+print('\nBasic statistical data :',df.describe())
+print('No. of rows and columns in dataframe is :',df.shape)
+print('\nmissing values are',df.isnull())
+df['BMI']=(df['Weight(Pounds)']/df['Height(Inches)']**2)
+plt.scatter(df['Height(Inches)'],df['Weight(Pounds)'])
+plt.show()
+print(df)

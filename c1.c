@@ -57,7 +57,7 @@ void main()
      printf("\n Process| AT | BT  |  WT |  TAT  ");
      printf("\n----------------------------------------\n");
      for (i=0;i<n;i++)
-          printf("  P%d|\t%d|\t%d|\t%d|\t%d|\n",p[i].pid,p[i].at,p[i].bt,p[i].wt,p[i].tat);
+          printf("  P%d|\t%d|\t%d|\t%d|\t%d|\n",p[i].pid,p[i].at,p[i].bt1,p[i].wt,p[i].tat);
      printf("\n Average Waiting Time = %d",avgwt/n);
      printf("\n Average TurnAround Time = %d\n",avgtat/n); 
 }

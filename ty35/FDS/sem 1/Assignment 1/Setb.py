@@ -1,0 +1,17 @@
+import pandas as pd
+import matplotlib.pyplot as p
+df=pd.read_csv('/data/ty35/Downloads/set.csv')
+print("First 10 rows:\n",df.head(10))
+print("Last 10 rows:\n",df.tail(10))
+print("Random 20:\n",df.sample(20))
+print("Size:",df.size)
+print("Shape:",df.shape)
+print("Data types:",df.dtypes)
+print("Statistical details:",df.describe)
+print("No of obeservations:",df.shape[0],"\nNo of Missing values:",df.isnull(),"\nNo of NAN values:",df.isna())
+df["BMI"]=df['Weight(Pounds)']/(df['Height(Inches)']**2)
+print("Max BMI:",df['BMI'].max())
+print("\nMIN BMI:",df['BMI'].min())
+print(df)
+df.plot(kind="scatter",x="Height(Inches)",y="Weight(Pounds)",color="indigo")
+p.show()

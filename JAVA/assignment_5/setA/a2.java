@@ -53,7 +53,7 @@ class MyFrame extends Frame {
 
 class Main {
     public static void main(String args[]) {
-        MyFrame f = new MyFrame("Vanshika khairnar");
+        MyFrame f = new MyFrame("rohit");
         f.setVisible(true);
     }
 }

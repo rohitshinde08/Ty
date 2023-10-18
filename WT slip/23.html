@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Manipulation</title>
+</head>
+<body>
+    <h2>String Manipulation</h2>
+    <form method="post" action="process.php">
+        <label for="sentence">Enter a sentence:</label>
+        <input type="text" name="sentence" id="sentence" required><br><br>
+
+        <label for="word">Enter a word to manipulate:</label>
+        <input type="text" name="word" id="word" required><br><br>
+
+        <label for="position">Enter the position (0-based index):</label>
+        <input type="number" name="position" id="position" required><br><br>
+
+        <label for="num_chars">Enter the number of characters to remove/replace:</label>
+        <input type="number" name="num_chars" id="num_chars" required><br><br>
+
+        <input type="submit" name="submit" value="Submit">
+    </form>
+</body>
+</html>
